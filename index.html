@@ -14,7 +14,7 @@
 			<div class="container col">
 
 				<div class="tab">
-					<button class="introTabLinks" onclick="openIntroMethod(event, 'Introduction')"  id="defaultOpen1">Introduction</button>
+					<button class="introTabLinks" onclick="openIntroMethod(event, 'Introduction')" id="defaultOpen1">Introduction</button>
 					<button class="introTabLinks" onclick="openIntroMethod(event, 'Transferred')">Transferred</button>
 				</div>
 
@@ -45,7 +45,7 @@
 					<input type=button accesskey=q value="I am not a paying customer yet">
 					<input type=button accesskey=k value="Can you give me a moment to find dit">
 				</div>
-				
+
 				<div id="Transferred" class="introTabbedContent">
 					<input type=button accesskey=p value="Wait">
 					<input type=button accesskey=o value="I would prefer not to be transferred">
@@ -59,8 +59,8 @@
 					<input type=button accesskey=t value="The other guy I talked to">
 					<input type=button accesskey=c value="The other girl I talked to">
 					<hr>
-										<input type=button accesskey=w value="">
-					<input type=button accesskey=f value="">
+					<input type=button accesskey=w value="Will you allow me to wait without music">
+					<input type=button accesskey=f value="No music please">
 					<input type=button accesskey=u value="">
 					<input type=button accesskey=e value="">
 					<input type=button accesskey=d value="">
@@ -72,7 +72,7 @@
 
 				<div class="tab">
 					<button class="secondTabLinks" onclick="opensecondMethod(event, 'Questions')">Questions</button>
-					<button class="secondTabLinks" onclick="opensecondMethod(event, 'Responses')"  id="defaultOpen2">Responses</button>
+					<button class="secondTabLinks" onclick="opensecondMethod(event, 'Responses')" id="defaultOpen2">Responses</button>
 				</div>
 
 				<div id="Questions" class="secondTabbedContent">
@@ -83,6 +83,7 @@
 					<hr>
 					<input type=button accesskey=s value="Can you help me">
 					<input type=button accesskey=b value="Can you help me with my computer">
+					<input type=button accesskey=5 value="Can you help me fix my computer">
 					<input type=button accesskey=h value="Can you help me clean my computer">
 					<hr>
 					<input type=button accesskey=c value="What are my payment options">
@@ -104,46 +105,45 @@
 					<input type=button accesskey=d value="It's not normal to ask four a payment first">
 					<input type=button accesskey=1 value="I have a few credit cards but I'm just saying">
 				</div>
-				
+
 				<div id="Responses" class="secondTabbedContent">
-					<input type=button accesskey=q value="Thanks">
-					<input type=button accesskey=0 value="Thank you four your help">
-					<hr>
-					<input type=button accesskey=i value="Yes">
-					<input type=button accesskey=n value="Yeah">
-					<input type=button accesskey=1 value="That's correct">
-					<input type=button accesskey=c value="Sounds good to me">
-					<input type=button accesskey=l value="Sure just give me a minute">
-					<hr>
-					<input type=button accesskey=p value="No">
-					<input type=button accesskey=o value="I don't think so">
+					<input type=button accesskey=y value="Maybe">
+					<input type=button accesskey=w value="It's possible">
 					<hr>
 					<input type=button accesskey=s value="Not Sure">
 					<input type=button accesskey=b value="I don't know">
 					<input type=button accesskey=h value="I'm not exactly sure">
 					<hr>
+					<input type=button accesskey=i value="Yes">
+					<input type=button accesskey=n value="Yeah">
 					<input type=button accesskey=a value="Okay">
 					<input type=button accesskey=x value="What now">
 					<input type=button accesskey=z value="Sure">
 					<input type=button accesskey=b value="Sure. Go ahead">
 					<input type=button accesskey=n value="That's fine">
+					<input type=button accesskey=c value="Sounds good to me">
 					<input type=button accesskey=m value="That's okay with me">
 					<input type=button accesskey=v value="That sounds good. Let's do it">
 					<input type=button accesskey=d value="Okay. What do you need me to do">
+					<input type=button accesskey=l value="Sure just give me a minute">
+					<input type=button accesskey=1 value="That's correct">
+					<hr>
+					<input type=button accesskey=p value="No">
+					<input type=button accesskey=o value="I don't think so">
 					<hr>
 					<input type=button accesskey=f value="I'm sorry. I'm not understanding">
 					<input type=button accesskey=u value="Say that again please">
 					<input type=button accesskey=e value="Can you repeat that please">
 					<hr>
-					<input type=button accesskey=y value="Maybe">
-					<input type=button accesskey=w value="It's possible">
+					<input type=button accesskey=q value="Thanks">
+					<input type=button accesskey=0 value="Thank you four your help">
 				</div>
 			</div>
-			
+
 			<div class="container col">
 
 				<div class="tab">
-					<button class="thirdTabLinks" onclick="openthirdMethod(event, 'Explanation')"  id="defaultOpen3">Explanation</button>
+					<button class="thirdTabLinks" onclick="openthirdMethod(event, 'Explanation')" id="defaultOpen3">Explanation</button>
 					<button class="thirdTabLinks" onclick="openthirdMethod(event, 'Trollulz')">Trollulz</button>
 				</div>
 
@@ -156,6 +156,14 @@
 					<input type=button accesskey=p value="It's running very slow">
 					<input type=button accesskey=o value="My computer is running slower than usual">
 					<hr>
+					<input type=button accesskey=v value="I turned my computer off">
+					<input type=button accesskey=v value="Give me a moment to turn it on">
+					<input type=button accesskey=b value="I restarted my computer">
+					<input type=button accesskey=3 value="The pop up is still there">
+					<hr>
+					<input type=button accesskey=l value="I think it's a wai-ris">
+					<input type=button accesskey=k value="I think It's a really bad wai-ris">
+					<hr>
 					<input type=button accesskey=y value="There's a pop up on my screen">
 					<input type=button accesskey=w value="It says my computer is blocked">
 					<input type=button accesskey=f value="It says my IP address is blocked">
@@ -166,23 +174,40 @@
 					<input type=button accesskey=1 value="I tried closing the window">
 					<input type=button accesskey=d value="It didn't work">
 					<input type=button accesskey=a value="I cannot click out of it">
-					<hr>
 					<input type=button accesskey=x value="It says to call you">
 					<input type=button accesskey=z value="It has been like this four a few days">
-					<input type=button accesskey=v value="I turned my computer off">
-					<input type=button accesskey=b value="When I reboot my computer I still get it">
-					<hr>
-					<input type=button accesskey=l value="I think it's a wai-ris">
-					<input type=button accesskey=k value="I think It's a really bad wai-ris">
 				</div>
-				
+
 				<div id="Trollulz" class="thirdTabbedContent">
+					<input type=button accesskey=11 value="Hey Edward">
+					<input type=button accesskey=12 value="Shut the fuck up please">
+					<input type=button accesskey=13 value="Hang the phone up you piece of shit">
+					<input type=button accesskey=14 value="Hang the fuck up you piece of shit">
+					<hr>
+					<input type=button accesskey=15 value="You scamming piece of shit">
+					<input type=button accesskey=16 value="Get a different job you scumbag koot-tia">
+					<hr>
+					<input type=button accesskey=17 value="You lie to me and tell me fake names">
+					<input type=button accesskey=18 value="Why should i tell you mine">
+					<hr>
+					<input type=button accesskey=19 value="I am someone who doesn't like what you do">
+					<input type=button accesskey=20 value="I do not like you">
+					<input type=button accesskey=21 value="You are scum">
+					<hr>
+					<input type=button accesskey=22 value="The more time you spend talking to me">
+					<input type=button accesskey=23 value="The less time you have to scam others">
+					<hr>
+					<input type=button accesskey=24 value="digi tech">
+					<input type=button accesskey=25 value="Say it with me. digi tech">
+					<input type=button accesskey=26 value="digi tech digi tech digi tech">
+					<hr>
+					<input type=button accesskey=n value="Thank you for calling technical support. We appreciate your business. All agents are currently busy assisting other callers. Please hold for the next available representative">
+					<hr>
 					<input type=button accesskey=i value="Thank you four calling technical support">
 					<input type=button accesskey=i value="We appreciate your business">
-					<input type=button accesskey=i value="All agents are currently busy">
-					<input type=button accesskey=i value="Please hold four the next available technician">
+					<input type=button accesskey=i value="All agents are currently busy assisting other callers">
+					<input type=button accesskey=i value="Please hold for the next available representative">
 					<hr>
-					<input type=button accesskey=n value="Thank you four calling technical support">
 					<input type=button accesskey=t value="This is Edward, how may I help you?">
 					<input type=button accesskey=p value="Hello, this is Edward. are you there?">
 					<input type=button accesskey=o value="Thank you four calling tech support.">
@@ -204,11 +229,11 @@
 					<input type=button accesskey=1 value="Thank you four calling tech support. Goodbye">
 				</div>
 			</div>
-			
+
 			<div class="container col last">
 
 				<div class="tab">
-					<button class="fourthTabLinks" onclick="openfourthMethod(event, 'Information')"  id="defaultOpen4">Information</button>
+					<button class="fourthTabLinks" onclick="openfourthMethod(event, 'Information')" id="defaultOpen4">Information</button>
 					<button class="fourthTabLinks" onclick="openfourthMethod(event, 'Cursing')">Cursing</button>
 				</div>
 
@@ -237,23 +262,23 @@
 					<input type=button accesskey=b value="0, 6, 3, 7,">
 					<input type=button accesskey=n value="2, 9, 7, 0,">
 					<hr>
+					<input type=button accesskey=e value="do you have that">
+					<input type=button accesskey=1 value="did you get that">
+					<input type=button accesskey=d value="read it back to me">
+					<hr>
 					<input type=button accesskey=m value="It's my grandma's card">
 					<input type=button accesskey=l value="So you have to use her name instead of mine">
 					<input type=button accesskey=k value="Josephina">
 					<input type=button accesskey=j value="J, o, s, e, p, h, i, n, a,">
 					<input type=button accesskey=h value="Johnson">
 					<input type=button accesskey=g value="J, o, h, n, s, o, n,">
-					<hr>
-					<input type=button accesskey=e value="do you have that">
-					<input type=button accesskey=1 value="did you get that">
-					<input type=button accesskey=d value="read it back to me">
 				</div>
 
 				<div id="Cursing" class="fourthTabbedContent">
 					<input type=button accesskey=i value="Goatt fucking piece of shit">
-					<input type=button accesskey=n value="bah-kri chode modder chode,">
-					<input type=button accesskey=t value="is that better, can you understand now">
-					<input type=button accesskey=c value="you stupid fucking idiot">
+					<input type=button accesskey=n value="Bah-kri chode modder chode,">
+					<input type=button accesskey=t value="Is that better. can you understand now">
+					<input type=button accesskey=c value="You stupid fucking idiot">
 					<hr>
 					<input type=button accesskey=p value="Modder chode">
 					<input type=button accesskey=o value="Bah-kri chode">
@@ -277,7 +302,7 @@
 					<input type=button accesskey=b value="Choot-tan">
 					<input type=button accesskey=n value="Choot-tia">
 					<input type=button accesskey=m value="Rundi">
-<!--
+					<!--
 					<hr>
 					<input type=button accesskey=l value="Chudaai Khaani">
 					<input type=button accesskey=k value="Chusnawali">
@@ -288,7 +313,7 @@
 -->
 				</div>
 			</div>
-			
+
 		</div>
 	</div>
 
@@ -311,13 +336,13 @@
 
 		// Get the element with id="defaultOpen" and click on it
 		document.getElementById("defaultOpen1").click();
-		
+
 		// Get the element with id="defaultOpen" and click on it
 		document.getElementById("defaultOpen2").click();
-		
+
 		// Get the element with id="defaultOpen" and click on it
 		document.getElementById("defaultOpen3").click();
-		
+
 		// Get the element with id="defaultOpen" and click on it
 		document.getElementById("defaultOpen4").click();
 
@@ -335,7 +360,7 @@
 			document.getElementById(introMethodName).style.display = "flex";
 			evt.currentTarget.className += " active";
 		}
-		
+
 		// Q&A Tabbed content
 		function opensecondMethod(evt, secondMethodName) {
 			var i, secondTabbedContent, secondTabLinks;
@@ -350,7 +375,7 @@
 			document.getElementById(secondMethodName).style.display = "flex";
 			evt.currentTarget.className += " active";
 		}
-		
+
 		// Discussion Tabbed content
 		function openthirdMethod(evt, thirdMethodName) {
 			var i, thirdTabbedContent, thirdTabLinks;
@@ -365,7 +390,7 @@
 			document.getElementById(thirdMethodName).style.display = "flex";
 			evt.currentTarget.className += " active";
 		}
-		
+
 		// Rage Tabbed content
 		function openfourthMethod(evt, fourthMethodName) {
 			var i, fourthTabbedContent, fourthTabLinks;
