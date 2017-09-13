@@ -19,7 +19,7 @@
 				</div>
 
 				<div id="Introduction" class="introTabbedContent">
-					<input type=button accesskey=aa value="Hi">
+					<input type=button value="Hi">
 					<input type=button accesskey=ab value="Hey">
 					<input type=button accesskey=ac value="Hello">
 					<input type=button accesskey=ad value="Hello. How are you">
@@ -343,7 +343,7 @@
 		// Text to speech on click for Mac OS X
 		function say(msg) {
 			with(speechSynthesis) {
-				s = new(SpeechSynthesisUtterance)(msg);
+				var s = new(SpeechSynthesisUtterance)(msg);
 				s.voice = getVoices()[0];
 				speak(s);
 			}
@@ -367,65 +367,65 @@
 		// Get the element with id="defaultOpen" and click on it
 		document.getElementById("defaultOpen4").click();
 
-//		// Intro Tabbed content
-//		function openIntroMethod(evt, introMethodName) {
-//			var i, introTabbedContent, introTabLinks;
-//			introtabcontent = document.getElementsByClassName("introTabbedContent");
-//			for (i = 0; i < introtabcontent.length; i++) {
-//				introtabcontent[i].style.display = "none";
-//			}
-//			introtablinks = document.getElementsByClassName("introTabLinks");
-//			for (i = 0; i < introtablinks.length; i++) {
-//				introtablinks[i].className = introtablinks[i].className.replace(" active", "");
-//			}
-//			document.getElementById(introMethodName).style.display = "flex";
-//			evt.currentTarget.className += " active";
-//		}
-//
-//		// Q&A Tabbed content
-//		function opensecondMethod(evt, secondMethodName) {
-//			var i, secondTabbedContent, secondTabLinks;
-//			secondtabcontent = document.getElementsByClassName("secondTabbedContent");
-//			for (i = 0; i < secondtabcontent.length; i++) {
-//				secondtabcontent[i].style.display = "none";
-//			}
-//			secondtablinks = document.getElementsByClassName("secondTabLinks");
-//			for (i = 0; i < secondtablinks.length; i++) {
-//				secondtablinks[i].className = secondtablinks[i].className.replace(" active", "");
-//			}
-//			document.getElementById(secondMethodName).style.display = "flex";
-//			evt.currentTarget.className += " active";
-//		}
-//
-//		// Discussion Tabbed content
-//		function openthirdMethod(evt, thirdMethodName) {
-//			var i, thirdTabbedContent, thirdTabLinks;
-//			thirdtabcontent = document.getElementsByClassName("thirdTabbedContent");
-//			for (i = 0; i < thirdtabcontent.length; i++) {
-//				thirdtabcontent[i].style.display = "none";
-//			}
-//			thirdtablinks = document.getElementsByClassName("thirdTabLinks");
-//			for (i = 0; i < thirdtablinks.length; i++) {
-//				thirdtablinks[i].className = thirdtablinks[i].className.replace(" active", "");
-//			}
-//			document.getElementById(thirdMethodName).style.display = "flex";
-//			evt.currentTarget.className += " active";
-//		}
-//
-//		// Rage Tabbed content
-//		function openfourthMethod(evt, fourthMethodName) {
-//			var i, fourthTabbedContent, fourthTabLinks;
-//			fourthtabcontent = document.getElementsByClassName("fourthTabbedContent");
-//			for (i = 0; i < fourthtabcontent.length; i++) {
-//				fourthtabcontent[i].style.display = "none";
-//			}
-//			fourthtablinks = document.getElementsByClassName("fourthTabLinks");
-//			for (i = 0; i < fourthtablinks.length; i++) {
-//				fourthtablinks[i].className = fourthtablinks[i].className.replace(" active", "");
-//			}
-//			document.getElementById(fourthMethodName).style.display = "flex";
-//			evt.currentTarget.className += " active";
-//		}
+		// Intro Tabbed content
+		function openIntroMethod(evt, introMethodName) {
+			var i, introTabbedContent, introTabLinks;
+			introtabcontent = document.getElementsByClassName("introTabbedContent");
+			for (i = 0; i < introtabcontent.length; i++) {
+				introtabcontent[i].style.display = "none";
+			}
+			introtablinks = document.getElementsByClassName("introTabLinks");
+			for (i = 0; i < introtablinks.length; i++) {
+				introtablinks[i].className = introtablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(introMethodName).style.display = "flex";
+			evt.currentTarget.className += " active";
+		}
+
+		// Q&A Tabbed content
+		function opensecondMethod(evt, secondMethodName) {
+			var i, secondTabbedContent, secondTabLinks;
+			secondtabcontent = document.getElementsByClassName("secondTabbedContent");
+			for (i = 0; i < secondtabcontent.length; i++) {
+				secondtabcontent[i].style.display = "none";
+			}
+			secondtablinks = document.getElementsByClassName("secondTabLinks");
+			for (i = 0; i < secondtablinks.length; i++) {
+				secondtablinks[i].className = secondtablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(secondMethodName).style.display = "flex";
+			evt.currentTarget.className += " active";
+		}
+
+		// Discussion Tabbed content
+		function openthirdMethod(evt, thirdMethodName) {
+			var i, thirdTabbedContent, thirdTabLinks;
+			thirdtabcontent = document.getElementsByClassName("thirdTabbedContent");
+			for (i = 0; i < thirdtabcontent.length; i++) {
+				thirdtabcontent[i].style.display = "none";
+			}
+			thirdtablinks = document.getElementsByClassName("thirdTabLinks");
+			for (i = 0; i < thirdtablinks.length; i++) {
+				thirdtablinks[i].className = thirdtablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(thirdMethodName).style.display = "flex";
+			evt.currentTarget.className += " active";
+		}
+
+		// Rage Tabbed content
+		function openfourthMethod(evt, fourthMethodName) {
+			var i, fourthTabbedContent, fourthTabLinks;
+			fourthtabcontent = document.getElementsByClassName("fourthTabbedContent");
+			for (i = 0; i < fourthtabcontent.length; i++) {
+				fourthtabcontent[i].style.display = "none";
+			}
+			fourthtablinks = document.getElementsByClassName("fourthTabLinks");
+			for (i = 0; i < fourthtablinks.length; i++) {
+				fourthtablinks[i].className = fourthtablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(fourthMethodName).style.display = "flex";
+			evt.currentTarget.className += " active";
+		}
 
 	</script>
 
