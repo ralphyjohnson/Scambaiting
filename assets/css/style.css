@@ -125,7 +125,7 @@ div.tab button.active {
 .secondTabbedContent,
 .thirdTabbedContent,
 .fourthTabbedContent {
-	display: none;
+	display: flex;
 	padding-top: 1em;
 	flex-direction: column;
 	-webkit-animation: fadeEffect 0.4s;
