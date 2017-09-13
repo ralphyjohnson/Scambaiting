@@ -343,16 +343,16 @@
 		// Text to speech on click for Mac OS X
 		function say(msg) {
 			with(speechSynthesis) {
-				s = new(SpeechSynthesisUtterance)(msg)
-				s.voice = getVoices[0]
-				speak(s)
+				s = new(SpeechSynthesisUtterance)(msg);
+				s.voice = getVoices()[0];
+				speak(s);
 			}
 		}
 		var tag = document.querySelectorAll('input')
 		for (i = 0; i < tag.length; i++) {
 			tag[i].addEventListener('click', function(e) {
-				say(e.target.value)
-			})
+				say(e.target.value);
+			});
 		}
 
 		// Get the element with id="defaultOpen" and click on it
